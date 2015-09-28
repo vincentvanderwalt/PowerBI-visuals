@@ -314,4 +314,10 @@ module powerbi.visuals.plugins {
         capabilities: samples.StreamGraph.capabilities,
         create: () => new samples.StreamGraph()
     };
+     
+    export var vinnyVisual: IVisualPlugin = {
+        name: 'vinnyVisual',
+        capabilities: capabilities.vinnyVisual,
+        create: () => new VinnyVisual()
+    };
 }
